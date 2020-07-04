@@ -1,0 +1,198 @@
+.LoaderContainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.ContentContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    color: #084468;
+}
+.InstructionContainer{
+    margin: 65px 0;
+}
+.BattleInstructions{
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.BattleInstructions li {
+    flex: 1;
+    flex-basis: 33%;
+    min-width: 300px;
+    text-align: center;   
+    list-style-type: none;
+}
+
+.HeaderSm{
+    font-size: 23px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.PlayersContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.GridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.Player{
+    display: flex;
+    margin: 25px 50px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Player  input{
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #666;
+    text-indent: 10px;
+    transition: all .3s ease;
+    box-shadow: 1px 1px 10px 0 rgba(46, 61, 73, .25);
+    background: #fff;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+.Player input::placeholder{
+    opacity: .7;
+}
+
+.SubmitBtn{
+    padding:10px 8px;
+    border:0.1em solid #FFFFFF;
+    margin: 10px auto;
+    width: 150px;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background: rgb(201, 100, 41);
+    text-align:center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.PlayerLabel{
+    margin: 40px auto;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.PlayerData{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.PlayerInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+.Avatar {
+    height: 80px;
+    width: 80px;
+}
+.BtnClear{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.BtnClear img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.Link{
+    text-decoration: none;
+    color: #0f6ba5;
+    font-size: 22px;
+}
+.BattleBtn , .ResetBtn{
+    margin: 40px auto;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 20px;
+    width: 100px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.BattleBtn{
+    background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+}
+.ResetBtn{
+    background: linear-gradient(to right,rgb(207, 26, 26),rgb(184, 104, 12)) !important;
+}
+
+.BattleBtn span , .ResetBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+.BattleBtn span::after , .ResetBtn span::after{
+    position: absolute;
+    opacity: 0;
+    top: -2px;
+    right: -20px;
+    transition: 0.5s;
+}
+.BattleBtn span::after{
+    content: '\2694';
+}
+.ResetBtn span::after{
+    content: '\292C';
+}
+.BattleBtn:hover span , .ResetBtn:hover span{
+    padding-right: 25px;
+}
+.BattleBtn:hover span::after , .ResetBtn:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+
+@media screen and ( max-width:800px ){
+    .Link{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .GridContainer{
+        grid-template-columns: 1fr;
+    }
+    .Link{
+        font-size: 22px;
+    }
+}
+@media screen and ( max-width:400px ){
+    .Link{
+        font-size: 16px;
+    }
+}
+

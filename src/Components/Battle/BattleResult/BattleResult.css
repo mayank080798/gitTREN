@@ -1,0 +1,86 @@
+.ResultContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px auto;
+    width: 375px;
+    text-align: center;
+    padding: 30px 5px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 25px 0 rgba(46, 61, 73, .14);
+    word-wrap: break-word;
+    background-size: cover;
+    background-blend-mode: screen;
+
+
+}
+.ResultContainer:nth-child(1){
+    background: linear-gradient(rgba(217, 236, 363, .99), rgba(217, 236, 349, .99)),
+        url('../../../Assets/Images/blackgrit-15c168539fb7109ce300574e7b4b0732.png');
+    background-size: contain;
+    background-blend-mode: saturation;
+    color: black;
+}
+.ResultContainer:nth-child(2){
+    background: linear-gradient(rgba(241, 222, 208, .99), rgba(241, 222, 208, .99)),
+        url('../../../Assets/Images/blackgrit-15c168539fb7109ce300574e7b4b0732.png');
+    background-size: contain;
+    background-blend-mode: saturation;
+    color: inherit;
+}
+.UserImage{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 2px solid #0AE0DF;
+    padding: 4px;
+}
+.Success,
+.Defeat{
+    margin: 15px auto;
+    font-size: 28px;
+}
+.Success{
+    color: #00d2d2;
+}
+.Defeat {
+    color: #ef5f63;
+}
+.Link{
+    text-decoration: none;
+    color: #0f6ba5;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.Column {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.GitItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: start;
+    margin: 6px 0px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:768px){
+    .ResultContainer{
+        width: 280px;
+    }
+    .GitItem{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .ResultContainer{
+        width: 300px;
+    }
+    .GitItem{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,82 @@
+.CardContent{
+    box-sizing: border-box;
+    font-family: 'Jost',sans-serif;
+    width: 400px;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 25px 0 rgba(46, 61, 73, .4);
+    word-wrap: break-word;
+    flex-basis: 22%;
+    background: linear-gradient(rgba(217, 236, 243, 0.99), rgba(217, 236, 243, .99)),
+        url('../../Assets//Images/blackgrit-15c168539fb7109ce300574e7b4b0732.png');
+    background-size: contain;
+    background-blend-mode: saturation;
+    /* background: rgba(8, 238, 180, 0.4); */
+    color: inherit;
+}
+.UserImageContainer {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+.UserImageContainer .UserImage {
+    margin-top: 15px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #0AE0DF;
+    padding: 6px;
+}
+.UserInfo{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.UserInfo h2 a {
+    text-decoration: none;
+    color: #063550;
+    text-transform: capitalize;
+}
+
+.GitInfo {
+    margin-top: 30px;
+}
+.GitInfo ul {
+    display: flex;
+    justify-content: space-between;
+}
+.GitInfo ul li{
+    flex: 1;
+    margin-left: -33px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.FollowersCount, .ForkedCount, .AlertCount{
+    order: 1;
+}
+.GitInfo img {
+    width: 30px;
+}
+.GitInfo .ColorForked{
+    width: 15.625px;
+}
+.Followers, .Forked, .Alert{
+    font-size: 24px;
+}
+
+@media screen and (max-width:1024px){
+    .CardContent{
+        width: 375px;
+    }
+}
+@media screen and (max-width:480px){
+    .CardContent{
+        width: 325px;
+    }
+}

@@ -1,0 +1,57 @@
+.RepoInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    width: 330px;
+    color:black;
+    background: linear-gradient(rgba(217, 236, 363, .99), rgba(217, 236, 349, .99)),
+        url('../../../Assets/Images/blackgrit-15c168539fb7109ce300574e7b4b0732.png');
+    background-size: contain;
+    background-blend-mode: saturation;
+    flex-basis: 48%;
+}
+.GitInfoOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.GitInfoTwo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-left: -55px;
+}
+.GitInfoTwo li {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+.GitInfoTwo li span{
+    margin: 10px auto;
+}
+
+.Name,
+.TagLine{
+    margin: 12px auto;
+}
+.Name a {
+    text-decoration: none;
+    color: #063550;
+}
+
+
+@media screen and (max-width:400px){
+    .RepoInfo{
+        width: 275px;
+    }
+    .GitInfoTwo{
+        margin-left: -45px;
+    }
+}

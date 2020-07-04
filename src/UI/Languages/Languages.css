@@ -1,0 +1,32 @@
+.LanguagesContainer{
+    padding-top: 12vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    z-index: 1;
+    margin-left: 18px;
+}
+
+
+@media screen and (max-width:1024px){
+    .LanguagesContainer{
+        margin-left: 30px;
+        gap: 5px;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .LanguagesContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2px;
+    }
+}
+@media screen and (max-width:480px){
+    .LanguagesContainer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3px;
+    }
+}

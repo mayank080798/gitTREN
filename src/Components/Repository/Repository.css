@@ -1,0 +1,134 @@
+.RepoCard {
+    width: 400px;
+    flex-direction: column;
+    background: rgb(255, 81, 0);
+    padding: 15px;
+    box-sizing: border-box;
+    background: url('../../Assets/Images/blackgrit-15c168539fb7109ce300574e7b4b0732.png');
+    background-size: contain;
+    background-blend-mode: saturation;
+    margin-top: 8px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 25px 0 rgba(46, 61, 73, .4);
+    color: #063550;
+    flex-basis: 32%;
+    border-width: 5px;
+    border-style: solid;
+    position: relative;
+    z-index: 9;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(26, 133, 133), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+}
+@keyframes developer {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.RepoHeader{
+    display: flex;
+    align-items: center;
+    flex-basis: 18%;
+}
+.RepoImage , .TeamImage{
+    border-radius: 50%;
+}
+.TeamImage {
+    width: 25px;
+    height: 25px;
+}
+.Avatar{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;   
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.Author h5{
+    text-transform: uppercase;
+}
+
+.RepoMain {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 82%;
+}
+.RepoName {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0 5px 5px;
+}
+.RepoName a {
+    text-decoration: none;
+    color:#063550;
+}
+
+.RepoAboutLanguage {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.RepoAboutText {
+    font-size: 13px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.RepoAboutDevelopers,
+.RepoAboutImages{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 8px;    
+    margin-left: 5px;
+}
+.RepoAboutImages a{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RepoDescription {
+    margin-top: 10px;
+}
+
+.RepoRatings{
+    display: flex;
+}
+
+.RepoRatings .GitInfo{
+    width: 80%;
+}
+.RepoRatings .GitInfo ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.RepoRatings .GitInfo ul li{
+    display: flex;
+    align-items: center;
+}
+.RepoRatings .GitInfo img {
+    width: 20px;
+}
+
+@media screen and (max-width:1024px){
+    .RepoCard {
+        width: 350px;
+    }
+}
+@media screen and (max-width:700px){
+    .RepoCard {
+        width: 450px;
+    }
+}
+@media screen and (max-width:500px){
+    .RepoCard {
+        width: 350px;
+    }
+}

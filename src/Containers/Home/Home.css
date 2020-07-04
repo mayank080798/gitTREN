@@ -1,0 +1,23 @@
+.GithubIconContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.GithubIcon{
+    width: 225px;
+    height: 225px;
+}
+
+@media screen and (max-width:768px){
+    .GithubIcon{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .GithubIcon{
+        width: 150px;
+        height: 150px;
+    }
+}

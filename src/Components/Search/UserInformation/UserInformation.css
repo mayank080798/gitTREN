@@ -1,0 +1,86 @@
+.UserInformation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 750px;
+    text-align: center;
+    padding: 30px 5px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 25px 0 rgba(46, 61, 73, .14);
+    word-wrap: break-word;
+    margin: 20px auto 10px auto;
+    color: black;
+    background: linear-gradient(rgba(241, 222, 208, .99), rgba(241, 222, 208, .99)),
+        url('../../../Assets/Images/blackgrit-15c168539fb7109ce300574e7b4b0732.png');
+    background-size: contain;
+    background-blend-mode: saturation;
+}
+
+.UserImageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.UserImage{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 2px solid #0AE0DF;
+    padding: 4px;
+    margin-bottom: 12px;
+}
+.Info{
+    font-size: 25px;
+    margin-bottom: 4px;
+    color: #084469;
+}
+.Info a{
+    color: #084469;
+}
+.GitInfo{
+    padding: 15px 0px;
+}
+
+.Column {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.Row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: start;
+    margin: 6px 0px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:768px){
+    .UserInformation{
+        grid-template-columns: 1fr;
+        width: 400px;
+    }
+    .GitInfo{
+        padding: 0px;
+    }
+}
+@media screen and (max-width:500px){
+    .UserInformation{
+        grid-template-columns: 1fr;
+        width: 350px;
+    }
+    .GitInfo{
+        padding: 0px;
+    }
+}
+@media screen and (max-width:360px){
+    .UserInformation{
+        grid-template-columns: 1fr;
+        width: 325px;
+    }
+    .GitInfo{
+        padding: 0px;
+    }
+}

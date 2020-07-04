@@ -1,0 +1,62 @@
+
+.Lang {
+    display: flex;
+    align-items: center;
+    transition: .7s ease;
+    transition-property: background;
+    padding: 0px 50px 0px 0px ;
+    margin: 2vh auto;
+    width: 75%;
+}
+.LangSmall{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px ;
+    text-transform: capitalize;
+}
+.Lang:hover{
+    background: #fff;
+    box-shadow: 0 10px 10px -10px rgb(167, 166, 166);
+}
+.Lang i{
+    font-size: 32px;
+    padding: 20px;
+    transition-property: background;
+    transition: 0.7s ease;
+}
+.Lang span{
+    padding: 20px 0px 20px 10px;
+    text-transform: capitalize;
+    
+}
+.Span{
+    font-size: 18px;
+    transition: 0.7s ease;
+    transition-property: color;
+}
+.Span:hover{
+    color: rgb(42, 108, 231);;
+}
+.Lang i:hover {
+    background: rgb(42, 108, 231);
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px){
+    .Lang{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .Lang{
+        width: 70%;
+    }
+    .Lang i{
+        padding: 15px;
+    }
+    .Lang span{
+        padding: 15px 0px 15px 10px;
+    }
+}

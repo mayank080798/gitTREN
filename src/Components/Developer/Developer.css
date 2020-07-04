@@ -1,0 +1,97 @@
+.DeveloperCard {
+    width: 400px;
+    flex-direction: column;
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    background: url('../../Assets//Images/blackgrit-15c168539fb7109ce300574e7b4b0732.png');
+    background-size: contain;
+    background-blend-mode: saturation;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 25px 0 rgba(46, 61, 73, .4);
+    color: #063550;
+    flex-basis: 32%;
+    border-width: 5px;
+    border-style: solid;
+    z-index: 2;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(26, 133, 133), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+
+}
+.DeveloperHeader{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    flex-basis: auto;
+}
+.DeveloperLogo{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+.DeveloperImg{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #0AE0DF;
+    padding: 5px;
+}
+.DeveloperName {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.DeveloperMain{
+    padding: 40px 0;
+    height: 140px;
+    flex-basis: auto;
+}
+.DeveloperAbout{
+    display: flex;
+    padding: 10px 0;
+}
+.DeveloperRepoName{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+.DeveloperStatus{
+    display: flex;
+    margin-top: 8px;
+}
+.Img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.DeveloperDescription{
+    margin-top: 10px 0;
+}
+.StatusImage{
+    display: inline-block;
+}
+.RepoCardText{
+    margin-top: 1px;
+}
+
+@media screen and (max-width:1024px){
+    .DeveloperCard {
+        width: 350px;
+    }
+}
+@media screen and (max-width:700px){
+    .DeveloperCard {
+        width: 450px;
+    }
+}
+@media screen and (max-width:500px){
+    .DeveloperCard {
+        width: 350px;
+    }
+}
